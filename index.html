@@ -25,13 +25,13 @@
   <meta name="robots" content="index, follow" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  <script src="js/jquery.simplePagination.js"></script>
+  <script src="js/Pagination.js"></script>
   <!-- Load posts function -->
   <script type="text/javascript">
     $(function() {
@@ -122,8 +122,11 @@
     <!--Navbar-->
     <div class="brand d-flex text-justify navbar mb-1">
 
-      <a class="navbar-brand logo h1 text-uppercase" href="">
-        Рівненський кооперативний економіко-правовий коледж</a>
+      <a class="navbar-brand logo" href="">
+        <div class="avatar mx-auto white">
+          <img src="img/logo.png" class="rounded-circle" alt="avatar">
+        </div>
+        <span class="h1 logo text-left text-uppercase">Рівненський кооперативний<br>економіко-правовий коледж</span></a>
       <a href="http://coop.com.ua" target="_blank"><img src="img/coop.jpg" style="width: 150px" class="rounded float-right" alt="Responsive image"></a>
     </div>
     <nav class="navbar d-flex font-weight-bold text-dark navbar-expand-lg navbar-light lighten-4">
@@ -428,15 +431,15 @@
           <!--Card-->
           <div class="testimonial-card">
 
-            <a href="http://pedpresa.com" target="_blank">
-              <img src="img/pedrpesacom.gif" style="width: 200px" class="rounded img-fluid float-right" alt="Responsive image">
+            <a href="https://pedpresa.ua" target="_blank">
+              <img src="img/pedpresa.png" style="width: 200px" class="rounded img-fluid float-right" alt="Responsive image">
             </a>
 
           </div>
           <div class="testimonial-card mx-5">
 
             <a href="http://mon.gov.ua" target="_blank">
-              <img src="img/osvita_minister.jpg" style="width: 200px" class="rounded img-fluid float-right" alt="Responsive image">
+              <img src="img/mon.webp" style="width: 200px" class="rounded img-fluid float-right" alt="Responsive image">
             </a>
 
           </div>
@@ -459,9 +462,9 @@
     <!--Section: Testimonials v.1-->
   </footer>
 
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
 
   <script id="post-template" type="text/x-handlebars-template">
       <div class="card news-line-item mb-2">

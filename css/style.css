@@ -44,7 +44,13 @@ small {
 }
 
 .logo {
-  font-size: .9rem !important;
+  float: left;
+  margin-left: 1rem;
+  font-size: 1.5rem !important;
+}
+
+.logo img {
+  width: 100px;
 }
 
 .navbar-brand {
@@ -160,6 +166,13 @@ span.ellipse.clickable {
   color: #333336;
   margin: 0 50px;
   z-index: 1000;
+}
+
+/* Small screens */
+@media only screen and (max-width: 900px) {
+  .logo {
+    font-size: .9rem !important;
+  }
 }
 
 /* Small screens */
