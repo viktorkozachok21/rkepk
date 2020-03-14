@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": "3",
+      "href": "#ZNO",
+      "link": "none",
+      "img": "http://kgsm1.kiev.ua/wp-content/uploads/2019/12/Dodatok-2-Kalendar-DPA-ZNO-2020.png",
+      "isactive": "",
+      "title": "УВАГА!!! ЗНО-2020!"
+    },
+
+    {
+      "id": "2",
+      "href": "#open-door",
+      "link": "menu-content/open-door-days.html",
+      "img": "https://investinbrod.com/wp-content/uploads/2018/11/Capture.jpg",
+      "isactive": "",
+      "title": "Дні відкритих дверей 4 квітня та 16 травня 2020 року. Початок о 12:00!"
+    },
+
+    {
+      "id": "1",
+      "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
+      "link": "none",
+      "img": "https://i.pinimg.com/564x/73/bd/b4/73bdb4fceca305669672e6cf5d4b32e5.jpg",
+      "isactive": "active",
+      "title": "Дистанційне навчання"
+    }
+  ]
+}

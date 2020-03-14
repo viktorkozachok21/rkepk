@@ -1,0 +1,170 @@
+body, html {
+  padding: 3px 7px;
+  margin: 0;
+  font-size: 1.1rem;
+  scroll-behavior: smooth;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3640 !important;
+  text-align: center;
+}
+
+small {
+  font-size: .7rem;
+}
+
+.testimonial-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.caption {
+  position: absolute;
+  padding: 10px 15px 0 15px;
+  bottom: 0;
+  background: #333336;
+  z-index: 100;
+  font-size: .9rem;
+}
+
+.h3-responsive {
+  font-weight: bold;
+  float: left;
+  color: white;
+}
+
+.carousel-inner img {
+  height: 65vh;
+}
+
+.logo {
+  font-size: .9rem !important;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link:hover {
+  background: #9f997c;
+}
+
+.dropdown-item {
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  background: #9f997c;
+}
+
+.card-body {
+  font-size: .9rem;
+}
+
+.post-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.map-container {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#go-top-btn {
+  position: fixed;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: #333336;
+  right: 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.simple-pagination {
+  display: block;
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+}
+
+.simple-pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-pagination li {
+  float: left;
+}
+
+span.ellipse.clickable {
+  cursor: pointer;
+}
+
+.ellipse input {
+  width: 3em;
+}
+
+.light-theme a, .light-theme span {
+  float: left;
+  color: #333336;
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #333336;
+  min-width: 30px;
+  padding: 0 10px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+}
+
+.light-theme .current {
+  background: #333336;
+  color: #FFF;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 1), 0 0 2px rgba(0, 0, 0, 0.3) inset;
+  cursor: default;
+}
+
+.btn-floating {
+  font-size: 2.5rem;
+  color: #333336;
+  margin: 0 50px;
+  z-index: 1000;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: .7rem !important;
+  }
+}
