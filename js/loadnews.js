@@ -14,12 +14,6 @@ $(function() {
       var html = template(context);
       $('#carousel-inner').append(html);
     });
-
-    $(".content").on("click", function() {
-      let content = $(this).attr("rel");
-      $("#content").load(content);
-      document.documentElement.scrollTop = 0;
-    });
   }
   $.ajax({
     dataType: 'json',

@@ -18,6 +18,12 @@ $(function() {
       var html = template(context);
       $('#posts').append(html);
     });
+    
+    $(".content").on("click", function() {
+      let content = $(this).attr("rel");
+      $("#content").load(content);
+      document.documentElement.scrollTop = 0;
+    });
   }
 
   $.ajax({

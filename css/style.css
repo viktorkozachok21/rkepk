@@ -25,7 +25,7 @@ small {
 .nav-button {
   position: absolute;
   right: 0;
-  top: -3rem;
+  top: -3.5rem;
   z-index: 100;
 }
 
@@ -130,7 +130,7 @@ small {
   height: 50px;
   background: var(--link-bg-color);
   right: .5rem;
-  z-index: 1000;
+  z-index: 300;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
@@ -257,6 +257,14 @@ a.page-link:hover {
   .carousel-inner img {
     height: 60vh;
   }
+
+  .modal {
+    padding: 5rem 0;
+  }
+
+  .light-theme a, .light-theme span {
+    font-size: 1.3rem;
+  }
 }
 
 /* Small screens */
@@ -275,5 +283,9 @@ a.page-link:hover {
 
   .carousel-inner img {
     height: 55vh;
+  }
+
+  .light-theme a, .light-theme span {
+    font-size: 1rem;
   }
 }
