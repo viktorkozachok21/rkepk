@@ -22,8 +22,8 @@
 				useAnchors: true,
 				hrefTextPrefix: '#page-',
 				hrefTextSuffix: '',
-				prevText: 'Попередня',
-				nextText: 'Наступна',
+				prevText: '&laquo;',
+				nextText: '&raquo;',
 				ellipseText: '&hellip;',
 				ellipsePageSet: true,
 				cssStyle: 'light-theme',
@@ -300,7 +300,7 @@
 
 			if (pageIndex == o.currentPage || o.disabled) {
 				if (o.disabled || options.classes === 'prev' || options.classes === 'next') {
-					$linkWrapper.addClass('disabled');
+					$linkWrapper.addClass('d-none');
 				} else {
 					$linkWrapper.addClass('active');
 				}

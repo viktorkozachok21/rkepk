@@ -2,7 +2,7 @@
   "posts": [
     {
         "id": "15",
-        "href": "#wish-luck",
+        "href": "javascript:;",
         "link": "news-content/20022020/wish-happy.html",
         "title": "Вітаємо переможця!",
         "posted": "20 лютого 2020 р.",
@@ -10,7 +10,7 @@
     },
     {
         "id": "14",
-        "href": "#open-doors",
+        "href": "javascript:;",
         "link": "news-content/06042019/open-door.html",
         "title": "Профорієнтаційний захід \"День відкритих дверей\"",
         "posted": "6 квітня 2019 р.",
@@ -18,7 +18,7 @@
     },
     {
         "id": "13",
-        "href": "#dream-work",
+        "href": "javascript:;",
         "link": "none",
         "title": "Профорієнтаційний захід \"Сходинка до омріяної професії\"",
         "posted": "24 жовтня 2018 р.",
@@ -26,7 +26,7 @@
     },
     {
         "id": "12",
-        "href": "#law-week",
+        "href": "javascript:;",
         "link": "none",
         "title": "Тиждень циклової комісії юридичних дисциплін",
         "posted": "16-19 жовтня 2018 р.",
@@ -34,7 +34,7 @@
     },
     {
         "id": "11",
-        "href": "#student-day",
+        "href": "javascript:;",
         "link": "none",
         "title": "Відкрита виховна година до Дня захисника України",
         "posted": "10 жовтня 2018 р.",
@@ -42,7 +42,7 @@
     },
     {
         "id": "10",
-        "href": "#students-work",
+        "href": "javascript:;",
         "link": "none",
         "title": "Студенти коледжу в Управлінні державної виконавчої служби",
         "posted": "27 вересня 2018 р.",
@@ -50,7 +50,7 @@
     },
     {
         "id": "9",
-        "href": "#travel",
+        "href": "javascript:;",
         "link": "none",
         "title": "Екскурсія юристів",
         "posted": "3 травня 2018 р.",
@@ -58,7 +58,7 @@
     },
     {
         "id": "8",
-        "href": "#student-day",
+        "href": "javascript:;",
         "link": "none",
         "title": "Робота дискусійного клубу \"Людина. Духовність. Мораль\" у І семестрі 2017-2018 н.р",
         "posted": "22-25 листопада 2017 р.",
@@ -66,7 +66,7 @@
     },
     {
         "id": "7",
-        "href": "#expert",
+        "href": "javascript:;",
         "link": "none",
         "title": "В коледжі працювала експертна комісія Міністерства освіти і науки України",
         "posted": "22-24 листопада 2017 р.",
@@ -74,7 +74,7 @@
     },
     {
         "id": "6",
-        "href": "#restourant-week",
+        "href": "javascript:;",
         "link": "none",
         "title": "Тиждень фахівця ресторанного господарства",
         "posted": "20-24 листопада 2017 р.",
@@ -82,7 +82,7 @@
     },
     {
         "id": "5",
-        "href": "#student-day",
+        "href": "javascript:;",
         "link": "none",
         "title": "День студента!",
         "posted": "15 листопада 2017 р.",
@@ -90,7 +90,7 @@
     },
     {
         "id": "4",
-        "href": "#wish",
+        "href": "javascript:;",
         "link": "none",
         "title": "Вітаємо стипендіатів!",
         "posted": "10 листопада 2017 р.",
@@ -98,7 +98,7 @@
     },
     {
         "id": "3",
-        "href": "#open-class",
+        "href": "javascript:;",
         "link": "none",
         "title": "Відкрите заняття з Біології",
         "posted": "1 листопада 2017 р.",
@@ -106,7 +106,7 @@
     },
     {
         "id": "2",
-        "href": "#open-class",
+        "href": "javascript:;",
         "link": "none",
         "title": "Відкрите заняття з Української літератури",
         "posted": "25 жовтня 2017 р.",
@@ -114,7 +114,7 @@
     },
     {
         "id": "1",
-        "href": "#law-week",
+        "href": "javascript:;",
         "link": "none",
         "title": "Тиждень циклової комісії юридичних дисциплін",
         "posted": "17-20 жовтня 2017 р.",
