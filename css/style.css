@@ -24,10 +24,14 @@ small {
   font-size: .7rem;
 }
 
+.main-menu {
+  min-height: 2rem;
+}
+
 .nav-button {
   position: absolute;
   right: 0;
-  top: -3.5rem;
+  top: 0;
   z-index: 100;
 }
 
@@ -54,12 +58,12 @@ small {
 }
 
 .carousel-inner img {
-  height: 65vh;
+  height: 33vw;
 }
 
 .logo-text {
   float: left;
-  margin-left: 1rem;
+  margin-left: .5rem;
   font-size: 1.5rem !important;
 }
 
@@ -115,6 +119,7 @@ small {
   overflow: hidden;
   position: relative;
   height: 0;
+  height: 550px;
 }
 
 .map-container iframe {
@@ -130,7 +135,7 @@ small {
   bottom: 5rem;
   width: 50px;
   height: 50px;
-  background: var(--link-bg-color);
+  background: #bdbdbd;
   right: .5rem;
   z-index: 300;
   text-decoration: none;
@@ -143,6 +148,7 @@ small {
 }
 
 .simple-pagination {
+  border: none;
   display: block;
   overflow: hidden;
   padding: 5px;
@@ -257,7 +263,15 @@ a.page-link:hover {
   }
 
   .carousel-inner img {
-    height: 60vh;
+    height: 43vw;
+  }
+
+  .map-container {
+    height: 450px !important;
+  }
+
+  .h3-responsive {
+    font-size: .9rem !important;
   }
 
   .modal {
@@ -272,19 +286,23 @@ a.page-link:hover {
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .logo-text {
-    font-size: .7rem !important;
+    font-size: .55rem !important;
   }
 
   .logo img {
-    width: 70px;
+    width: 50px;
   }
 
   .logo-coop {
-    width: 100px;
+    width: 75px;
+  }
+
+  .map-container {
+    height: 250px !important;
   }
 
   .carousel-inner img {
-    height: 55vh;
+    height: 53vw;
   }
 
   .light-theme a, .light-theme span {
