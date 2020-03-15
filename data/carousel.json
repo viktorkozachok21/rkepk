@@ -1,28 +1,34 @@
 {
   "posts": [
     {
+      "id": "4",
+      "href": "https://covid19.com.ua/",
+      "link": "none",
+      "img": "content-image/news.webp",
+      "isactive": "",
+      "title": "Увага, коронавірус!"
+    },
+    {
       "id": "3",
       "href": "http://testportal.gov.ua/",
       "link": "none",
-      "img": "content-image/ZNO-2020.png",
+      "img": "content-image/ZNO-2020.webp",
       "isactive": "",
-      "title": "УВАГА!!! ЗНО-2020!"
+      "title": "ЗНО-2020!"
     },
-
     {
       "id": "2",
       "href": "javascript:;",
       "link": "menu-content/open-door-days.html",
-      "img": "content-image/Open-Door.png",
+      "img": "content-image/Open-Door.webp",
       "isactive": "",
       "title": "День відкритих дверей 4 квітня та 16 травня 2020 року. Початок о 12:00!"
     },
-
     {
       "id": "1",
       "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
       "link": "none",
-      "img": "content-image/Remote-Work.jpg",
+      "img": "content-image/Remote-Work.webp",
       "isactive": "active",
       "title": "Дистанційне навчання"
     }
