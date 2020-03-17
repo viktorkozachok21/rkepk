@@ -250,9 +250,9 @@ a.page-link:hover {
   cursor: pointer;
 }
 
-.img-circle {
-    border-radius: 50%;
-    height: 10rem;
+.img-avatar {
+    border-radius: 10%;
+    height: 11rem;
     width: 10rem;
 }
 
@@ -298,15 +298,15 @@ a.page-link:hover {
 /* Small screens */
 @media only screen and (max-width: 700px) {
   .logo-text {
-    font-size: .55rem !important;
+    font-size: .5rem !important;
   }
 
   .logo img {
-    width: 50px;
+    width: 40px;
   }
 
   .logo-coop {
-    width: 80px;
+    width: 60px;
   }
 
   .map-container {
