@@ -26,6 +26,15 @@ small {
   min-height: 2rem;
 }
 
+.page-avatar {
+  width: 20rem;
+}
+
+.video-player {
+  width: 80%;
+  height: 30rem;
+}
+
 .nav-button {
   position: absolute;
   right: 0;

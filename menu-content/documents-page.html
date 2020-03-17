@@ -85,7 +85,6 @@
   $(".content").on("click", function() {
     let content = $(this).attr("rel");
     $("#content").load(content);
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo(0,0);
   });
 </script>
