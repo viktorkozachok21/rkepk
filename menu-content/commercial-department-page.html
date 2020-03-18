@@ -1,8 +1,12 @@
 <article class="jumbotron text-center p-3">
+  <a class="btn btn-light btn-rounded waves-effect w-100" onclick="loadContent('menu-content/technology-department-page.html');" href="javascript:;">
+    <i class="fas fa-paper mr-1 float-left"></i>
+    <p class="p-1 h5 brown-text">Технологічне відділення</p>
+  </a>
   <h2>Відділення комерційної діяльності і права</h2>
   <div class="clearfix text-justify">
-    <div class="float-left text-center mr-3 mb-1">
-      <img src="img/*" loading="lazy" alt="Department" id="department1" onclick="fullImage(this);" class="open-full page-avatar">
+    <div class="avatar-content text-center mb-1">
+      <img src="img/teachers/Ilchuk-min.JPG" loading="lazy" alt="Department" id="department1" onclick="fullImage(this);" class="open-full img-fruid page-avatar">
       <h5 class="brown-text mt-3 b-1">Ільчук Галина Іванівна</h5>
       <h7 class="text-muted">Завідувач відділення<br>комерційної діяльності і права</h7>
     </div>
@@ -147,16 +151,8 @@
       та багато інших.
     </p>
   </div>
-  <a class="btn content btn-light btn-rounded waves-effect w-100" rel="menu-content/technology-department-page.html" href="javascript:;">
+  <a class="btn btn-light btn-rounded waves-effect w-100" onclick="loadContent('menu-content/technology-department-page.html');" href="javascript:;">
     <i class="fas fa-paper mr-1 float-left"></i>
     <p class="p-1 h5 brown-text">Технологічне відділення</p>
   </a>
 </article>
-
-<script>
-  $(".content").on("click", function() {
-    let content = $(this).attr("rel");
-    $("#content").load(content);
-    window.scrollTo(0,0);
-  });
-</script>

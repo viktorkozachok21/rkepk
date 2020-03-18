@@ -3,11 +3,11 @@
     <i class="fas fa-paper mr-1 float-left"></i>
     <p class="p-1 h5 brown-text">Статут</p>
   </a>
-  <a class="btn content btn-light btn-rounded waves-effect w-100" rel="menu-content/licenses-and-certificates.html" href="javascript:;">
+  <a class="btn btn-light btn-rounded waves-effect w-100" onclick="loadContent('menu-content/licenses-and-certificates.html');" href="javascript:;">
     <i class="fas fa-paper mr-1 float-left"></i>
     <p class="p-1 h5 brown-text">Ліцензії, сертифікати, довідки</p>
   </a>
-  <a href="documents/Collective-Agreement.pdf" class="btn btn-light btn-rounded waves-effect w-100 target="_blank"">
+  <a href="documents/Collective-Agreement.pdf" class="btn btn-light btn-rounded waves-effect w-100" target="_blank">
     <i class="fas fa-paper mr-1 float-left"></i>
     <p class="p-1 h5 brown-text">Колективний Договір</p>
   </a>
@@ -80,11 +80,3 @@
     <p class="p-1 h5 brown-text">Рішення Педагогічної Ради</p>
   </a>
 </article>
-
-<script>
-  $(".content").on("click", function() {
-    let content = $(this).attr("rel");
-    $("#content").load(content);
-    window.scrollTo(0,0);
-  });
-</script>

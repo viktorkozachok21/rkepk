@@ -26,8 +26,14 @@ small {
   min-height: 2rem;
 }
 
+.avatar-content {
+  float: left;
+  margin-right: 1.5rem;
+}
+
 .page-avatar {
-  width: 20rem;
+  width: 15rem;
+  height: 16rem;
 }
 
 .video-player {
@@ -172,12 +178,7 @@ small {
   float: left;
 }
 
-span.ellipse.clickable {
-  cursor: pointer;
-}
-
-.light-theme a, .light-theme span {
-  float: left;
+.paginationjs-page, .paginationjs-prev, .paginationjs-next {
   color: #333336;
   font-size: 1.5rem;
   line-height: 35px;
@@ -195,9 +196,8 @@ a.page-link:hover {
   border: 1px solid var(--button-bg-color);
 }
 
-.light-theme .current {
-  background: var(--button-bg-color);
-  color: white;
+.paginationjs-pages .active {
+  background: #7d9c88;
   cursor: default;
 }
 
@@ -265,7 +265,6 @@ a.page-link:hover {
     width: 10rem;
 }
 
-/* Small screens */
 @media only screen and (max-width: 1000px) {
   body, html {
     font-size: 1rem;
@@ -304,7 +303,6 @@ a.page-link:hover {
   }
 }
 
-/* Small screens */
 @media only screen and (max-width: 700px) {
   .logo-text {
     font-size: .5rem !important;
@@ -316,6 +314,11 @@ a.page-link:hover {
 
   .logo-coop {
     width: 60px;
+  }
+
+  .avatar-content {
+    float: none;
+    margin-right: 0;
   }
 
   .map-container {

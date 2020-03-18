@@ -5,7 +5,6 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129087929-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -22,20 +21,19 @@
   <meta name="revisit-after" content="7 days" />
   <meta name="robots" content="index, follow" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" as="style">
   <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" as="style">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="preload" href="css/bootstrap.min.css" as="style">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="preload" href="css/mdb.min.css" as="style">
-  <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="preload" href="css/style.css" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script async type="text/javascript" src="js/handlebars.min.js"></script>
-  <script async type="text/javascript" src="js/pagination.js"></script>
-  <script async type="text/javascript" src="js/loadnews.min.js"></script>
-  <script async type="text/javascript" src="js/loadposts.min.js"></script>
+  <script async src="js/pagination.js" type="text/javascript"></script>
+  <script async src="js/load-data.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -43,11 +41,11 @@
     <div class="brand d-flex text-justify navbar mb-1">
       <a class="navbar-brand logo" href="">
         <div class="avatar mx-auto white">
-          <img src="img/logo.webp" class="rounded-circle" alt="avatar">
+          <img src="img/logo.webp" class="rounded-circle" loading="lazy" alt="Logo">
         </div>
         <span class="h1 logo-text text-left text-uppercase">Рівненський кооперативний<br>економіко-правовий фаховий коледж</span>
       </a>
-      <a href="http://coop.com.ua" target="_blank"><img src="img/coop.webp" class="rounded logo-coop float-right" alt="Responsive image"></a>
+      <a href="http://coop.com.ua" target="_blank"><img src="img/coop.webp" loading="lazy" class="rounded logo-coop float-right" alt="Coop"></a>
     </div>
     <nav class="navbar font-weight-bold text-dark navbar-expand-lg navbar-light lighten-4">
       <div class="main-menu text-end w-100">
@@ -57,49 +55,49 @@
         <div class="collapse navbar-collapse" id="basicNav">
           <ul class="navbar-nav w-100">
             <li class="nav-item">
-              <a class="nav-link active" href="">Наше життя</a>
+              <a class="nav-link" href="">Наше життя</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="aboutUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Про нас</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="aboutUs">
-                <a class="dropdown-item content" rel="menu-content/main-page.html" href="javascript:;">Головна</a>
-                <a class="dropdown-item content" rel="menu-content/characteristic-page.html" href="javascript:;">Характеристика коледжу</a>
-                <a class="dropdown-item content" rel="menu-content/history-page.html" href="javascript:;">Історія коледжу</a>
-                <a class="dropdown-item content" rel="menu-content/library-page.html" href="javascript:;">Бібліотека</a>
-                <a class="dropdown-item content" rel="menu-content/free-time-page.html" href="javascript:;">Дозвілля, виховна робота</a>
-                <a class="dropdown-item content" rel="menu-content/sport-work-page.html" href="javascript:;">Спортивно-масова робота</a>
-                <a class="dropdown-item content" rel="menu-content/museum-page.html" href="javascript:;">Музей</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/main-page.html');" href="javascript:;">Головна</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/characteristic-page.html');" href="javascript:;">Характеристика коледжу</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/history-page.html');" href="javascript:;">Історія коледжу</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/library-page.html');" href="javascript:;">Бібліотека</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/free-time-page.html');" href="javascript:;">Дозвілля, виховна робота</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/sport-work-page.html');" href="javascript:;">Спортивно-масова робота</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/museum-page.html');" href="javascript:;">Музей</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="speciality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Спеціальності</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="speciality">
-                <a class="dropdown-item content" rel="menu-content/specialty/restaurant-page.html" href="javascript:;">Готельно-ресторанна справа</a>
-                <a class="dropdown-item content" rel="menu-content/specialty/entrepreneurship-trade-page.html" href="javascript:;">Підприємництво, торгівля та біржова діяльність</a>
-                <a class="dropdown-item content" rel="menu-content/specialty/finance-page.html" href="javascript:;">Фінанси, банківська справа та страхування</a>
-                <a class="dropdown-item content" rel="menu-content/specialty/accounting-page.html" href="javascript:;">Облік і оподаткування</a>
-                <a class="dropdown-item content" rel="menu-content/specialty/law-page.html" href="javascript:;">Право</a>
-                <a class="dropdown-item content" rel="menu-content/specialty/food-page.html" href="javascript:;">Харчові технології</a>
-                <a class="dropdown-item content" rel="menu-content/specialty/professions-page.html" href="javascript:;">Робітничі професії</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/restaurant-page.html');" href="javascript:;">Готельно-ресторанна справа</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/entrepreneurship-trade-page.html');" href="javascript:;">Підприємництво, торгівля та біржова діяльність</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/finance-page.html');" href="javascript:;">Фінанси, банківська справа та страхування</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/accounting-page.html');" href="javascript:;">Облік і оподаткування</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/law-page.html');" href="javascript:;">Право</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/food-page.html');" href="javascript:;">Харчові технології</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/specialty/professions-page.html');" href="javascript:;">Робітничі професії</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="students" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студенту</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="students">
-                <a class="dropdown-item content" rel="menu-content/schedule-page.html" href="javascript:;">Розклад занять</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/schedule-page.html');" href="javascript:;">Розклад занять</a>
                 <a class="dropdown-item" href="https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh" target="_blank">Дистанційне навчання</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="speciality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Абітурієнту</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="speciality">
-                <a class="dropdown-item content" rel="menu-content/rules-page.html" href="javascript:;">Правила прийому</a>
-                <a class="dropdown-item content" rel="menu-content/open-door-days.html" href="javascript:;">Дні відкритих дверей</a>
-                <a class="dropdown-item content" rel="menu-content/info-entrant-page.html" href="javascript:;">Інформація для абітурієнта</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/rules-page.html');" href="javascript:;">Правила прийому</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/open-door-days.html');" href="javascript:;">Дні відкритих дверей</a>
+                <a class="dropdown-item" onclick="loadContent('menu-content/info-entrant-page.html');" href="javascript:;">Інформація для абітурієнта</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link content" rel="menu-content/documents-page.html" href="javascript:;">Установчі документи</a>
+              <a class="nav-link" onclick="loadContent('menu-content/documents-page.html');" href="javascript:;">Установчі документи</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="showContact" href="javascript:;">Контакти</a>
@@ -113,15 +111,8 @@
   <button onclick="goToTop()" id="go-top-btn"><i class="fas fa-arrow-up"></i></button>
 
   <main>
-    <a href="javascript:;" class="btn btn-light btn-rounded waves-effect w-100">
-      <i class="fas fa-paper mr-1 float-left"></i>
-      <p class="p-1 h5 brown-text">Статут</p>
-    </a>
-    <div id="content">
-      <article class="jumbotron text-center">
-      <div class="row blue-grey lighten-4 m-1 p-1">
-
-        <div class="col-md-8 col-sm-12 p-1 pr-1">
+      <div class="row blue-grey lighten-4 m-1 mb-0 p-1">
+        <div class="col-md-8 col-sm-12 p-1 mb-0 pr-1" id="content">
           <div id="news-line">
             <div id="carousel" class="carousel slide mb-3" data-ride="carousel">
               <div class="carousel-inner" id="carousel-inner" role="listbox">
@@ -138,16 +129,16 @@
           <div class="our-life">
             <div id="posts"></div>
             <div class="d-flex justify-content-center">
-              <div id="light-pagination" class="pagination page-link"></div>
+              <div id="lightPagination" class="pagination light-theme simple-pagination"></div>
             </div>
           </div>
-
         </div>
+
         <div class="col-md-4 col-sm-12 p-1">
           <div class="card p-0 pt-3 mb-1 testimonial-card">
             <div class="card-up indigo lighten-1"></div>
             <div class="white">
-              <img data-src="img/director.webp" class="img-avatar lazyload" loading="lazy" alt="РКЕПК">
+              <img src="img/director.webp" class="img-avatar" loading="lazy" alt="РКЕПК">
             </div>
             <div class="card-body p-3">
               <h6 class="card-title text-center"><strong class="brown-text">Директор коледжу С.І. Добридник</strong>
@@ -158,6 +149,9 @@
               <p class="text-justify font-italic">
                 Навчання в Рівненському кооперативному економіко-правовому коледжі – це отримання міцних професійних знань, вивірений шлях до гідного вступу молодих людей в самостійне життя.
               </p>
+              <div class="card p-1">
+                <img src="img/colege.webp" class="img-fluid" loading="lazy" alt="РКЕПК">
+              </div>
               <p class="text-justify font-italic">
                 Знання та практичні навички, набуті в коледжі, допоможуть вам знайти своє місце в сучасних економічних умовах.
                 Прийдіть до нас і Ви переконаєтесь, що Рівненський кооперативний коледж – це навчальний заклад сучасного рівня, який впевнено дивиться в майбутнє.
@@ -169,9 +163,6 @@
             </div>
           </div>
 
-          <div class="card testimonial-card p-1">
-            <img data-src="img/colege.webp" class="img-fluid lazyload" loading="lazy" alt="РКЕПК">
-          </div>
           <div class="accordion md-accordion accordion-4" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="card my-1">
               <div class="card-header z-depth-1 brown lighten-4" role="tab" id="heading1">
@@ -181,13 +172,12 @@
                   </h5>
                 </a>
               </div>
-
-              <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
+              <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
                 <div class="card-body p-1 m-1 text-center dark-grey dark-text">
                   <p class="text-justify">
                     До вашої уваги в цьому розділі розміщена інформація про адміністрацію Рівненського кооперативного економіко-правового коледжу.
                   </p>
-                  <a rel="menu-content/admin-page.html" href="javascript:;" class="btn content btn-light">Детальніше</a>
+                  <a onclick="loadContent('menu-content/admin-page.html');" href="javascript:;" class="btn btn-light">Детальніше</a>
                 </div>
               </div>
             </div>
@@ -203,7 +193,7 @@
                 <div class="card-body p-1 m-1 text-center dark-grey dark-text text-wrap">
                   <p class="text-justify">Методична робота в навчальному закладі завжди була і є фундаментом, на якому будується і через який вирішується головне його завдання – здійснення навчально-виховного процесу.
                   </p>
-                  <a rel="menu-content/method-page.html" href="javascript:;" class="btn content btn-light">Детальніше</a>
+                  <a onclick="loadContent('menu-content/method-page.html');" href="javascript:;" class="btn btn-light">Детальніше</a>
                 </div>
               </div>
             </div>
@@ -218,8 +208,8 @@
               <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
                 <div class="card-body p-0 m-0 dark-grey dark-text">
                   <div class="list-group">
-                    <a rel="menu-content/commercial-department-page.html" href="javascript:;" class="list-group-item content list-group-item-action">Відділення комерційної діяльності та права</a>
-                    <a rel="menu-content/technology-department-page.html" href="javascript:;" class="list-group-item content list-group-item-action">Технологічне відділення</a>
+                    <a onclick="loadContent('menu-content/commercial-department-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Відділення комерційної діяльності та права</a>
+                    <a onclick="loadContent('menu-content/technology-department-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Технологічне відділення</a>
                   </div>
                 </div>
               </div>
@@ -249,8 +239,6 @@
           </div>
         </div>
       </div>
-    </div>
-    </article>
   </main>
 
   <footer>
@@ -262,11 +250,11 @@
       </div>
       <div class="row">
         <div class="col-md-5 col-sm-12 mb-4">
-          <div id="map-container-google-1" class="map-container">
+          <!-- <div id="map-container-google-1" class="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5063.198402595387!2d26.257421698499236!3d50.61598467954887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e4248307236b1bf!2z0KDRltCy0L3QtdC90YHRjNC60LjQuSDQutC-0L7Qv9C10YDQsNGC0LjQstC90LjQuSDQtdC60L7QvdC-0LzRltC60L4t0L_RgNCw0LLQvtCy0LjQuSDQutC-0LvQtdC00LY!5e0!3m2!1suk!2sua!4v1582805408741!5m2!1suk!2sua"
               frameborder="0" loading="lazy"></iframe>
-          </div>
+          </div> -->
         </div>
         <div class="col-md-7 col-sm-12 mb-4">
           <div class="contact">
@@ -340,27 +328,27 @@
         <div class="col-md-12 col-sm-12 d-flex justify-content-center">
           <div class="testimonial-card">
             <a href="https://pedpresa.ua" target="_blank">
-              <img data-src="img/pedpresa.webp" class="footer-link lazyload rounded img-fluid" loading="lazy">
+              <img src="img/pedpresa.webp" class="footer-link rounded img-fluid" loading="lazy">
             </a>
           </div>
           <div class="testimonial-card mx-1">
             <a href="https://www.kmu.gov.ua/" target="_blank">
-              <img data-src="img/kmu.webp" class="footer-link lazyload rounded img-fluid" loading="lazy">
+              <img src="img/kmu.webp" class="footer-link rounded img-fluid" loading="lazy">
             </a>
           </div>
           <div class="testimonial-card mx-1">
             <a href="http://mon.gov.ua" target="_blank">
-              <img data-src="img/mon.webp" class="footer-link lazyload rounded img-fluid" loading="lazy">
+              <img src="img/mon.webp" class="footer-link rounded img-fluid" loading="lazy">
             </a>
           </div>
           <div class="testimonial-card mx-1">
             <a href="https://lv.testportal.gov.ua/" target="_blank">
-              <img data-src="img/lvivskyi.webp" class="footer-link lazyload rounded img-fluid" loading="lazy">
+              <img src="img/lvivskyi.webp" class="footer-link rounded img-fluid" loading="lazy">
             </a>
           </div>
           <div class="testimonial-card">
             <a href="http://rvosvita.org.ua" target="_blank">
-              <img data-src="img/osvita_rivne.webp" class="footer-link lazyload rounded img-fluid" loading="lazy">
+              <img src="img/osvita_rivne.webp" class="footer-link rounded img-fluid" loading="lazy">
             </a>
           </div>
         </div>
@@ -378,80 +366,7 @@
   </div>
 
   <script async type="text/javascript" src="js/bootstrap.min.js"></script>
-
-  <script id="post-template" type="text/x-handlebars-template">
-    <div class="card news-line-item lazyload mb-2">
-        <div class="card-body">
-          <a rel="{{ link }}" class="content" href="{{ href }}">
-            <h5 class="card-title brown-text">{{ title }}</h5>
-          </a>
-          <p class="text-justify post-description">{{ description }}</p>
-          <span class="small float-right">{{ posted }}</span>
-        </div>
-      </div>
-  </script>
-  <script id="carousel-template" type="text/x-handlebars-template">
-    <div class="carousel-item {{ isactive }}">
-      <div class="view">
-        <div class="caption w-100">
-          <a rel="{{ link }}" class="content" href="{{ href }}">
-            <h3 class="h3-responsive text-justify">{{ title }}</h3>
-          </a>
-        </div>
-        <img class="d-block carousel-img img-fluid lazyload w-100" data-src="{{ img }}" loading="lazy">
-      </div>
-    </div>
-  </script>
-  <script async type="text/javascript">
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
-  </script>
-  <script async type="text/javascript">
-    const modal = document.getElementById("full-image");
-    const modalImg = document.getElementById("image");
-
-    function fullImage(e) {
-      modal.style.display = "block";
-      modalImg.src = e.src;
-    }
-    const span = document.getElementById("close-full");
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-  </script>
-  <script async type="text/javascript">
-    showContact.onclick = () => {
-      document.getElementById("contact").scrollIntoView();
-    };
-  </script>
-  <script async type="text/javascript">
-    const goTop = document.getElementById("go-top-btn");
-    window.onscroll = () => {
-      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        goTop.style.display = "block";
-      } else {
-        goTop.style.display = "none";
-      }
-    };
-
-    function goToTop() {
-      window.scrollTo(0, 0);
-    };
-  </script>
-  <script>
-  turbo.onclick = () => {
-  let content = document.getElementById("content").innerHTML;
-
-let response = await fetch('/menu-content/our-life.html', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'text/html;charset=utf-8'
-  },
-});}
-  </script>
-  <script async src="js/lazysizes.min.js"></script>
+  <script async src="js/logic.js" type="text/javascript"></script>
 </body>
 
 </html>
