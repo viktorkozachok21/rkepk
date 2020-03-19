@@ -26,8 +26,8 @@ function loadContent(href) {
   .then(html => {
     document.getElementById("content").innerHTML = html;
     lazyLoadInstance.update();
+    document.getElementById("content").scrollIntoView();
   });
-  document.getElementById("content").scrollIntoView();
 };
 
 const modal = document.getElementById("full-image");
