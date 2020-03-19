@@ -3,7 +3,7 @@ fetch('data/content.json')
     return response.json();
   })
   .then((data) => {
-    document.getElementById("carousel-inner").innerHTML = '';
+    document.getElementById("carousel-view").remove();
     data.top.forEach(item => {
       let topTemplate = `
           <div class="carousel-item ${ item.isactive }">
@@ -13,7 +13,7 @@ fetch('data/content.json')
                   <h2 class="h3-responsive text-justify">${ item.title }</h2>
                 </a>
               </div>
-              <img class="d-block carousel-img lazy img-fluid w-100" alt="${ item.title }" data-src="${ item.img }" loading="lazy">
+              <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ item.img }" alt="${ item.title }" loading="lazy">
             </div>
           </div>
           `
@@ -27,7 +27,7 @@ $.getJSON('data/content.json', function(json) {
     dataSource: json.posts,
     autoHidePrevious: true,
     autoHideNext: true,
-    pageSize: 7,
+    pageSize: 5,
     callback: function(data, pagination) {
       var wrapper = $('#posts').empty();
       $.each(data, function(item, post) {
