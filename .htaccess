@@ -2,16 +2,22 @@ DirectoryIndex index.html
 
 # Remove the www prefix
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.
-RewriteRule ^(.*)$ http://rkepk.edu.ua/$1 [R=301,L]
+Options +FollowSymLinks
+RewriteCond %{HTTP_HOST} ^www\.domain\.tld$ [NC]
+RewriteRule (.*) http://rkepk.edu.ua/$1 [R=301,L]
 
-# Error 404 page
+# Error pages
 ErrorDocument 404 /siteerror404.html
 
-# One month for most static assets
-<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|webp)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
+# Cache images and flash content for one month
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf)$">
+	Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+# cache text, css, and javascript files for one week
+<FilesMatch ".(js|css|pdf|txt)$">
+	Header set Cache-Control "max-age=604800"
+</FilesMatch>
 
 # Caching
 <IfModule mod_expires.c>
