@@ -22,6 +22,15 @@ small {
   font-size: .7rem;
 }
 
+.card-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem !important;
+  height: 100vh;
+  width: 100vw;
+}
+
 .main-menu {
   min-height: 2rem;
 }

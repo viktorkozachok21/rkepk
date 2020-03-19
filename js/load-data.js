@@ -3,16 +3,17 @@ fetch('data/content.json')
     return response.json();
   })
   .then((data) => {
-    data.top.forEach(top => {
+    document.getElementById("carousel-inner").innerHTML = '';
+    data.top.forEach(item => {
       let topTemplate = `
-          <div class="carousel-item ${ top.isactive }">
+          <div class="carousel-item ${ item.isactive }">
             <div class="view">
               <div class="caption w-100">
-                <a onclick="${ top.link }" href="${ top.href }">
-                  <h3 class="h3-responsive text-justify">${ top.title }</h3>
+                <a onclick="${ item.link }" href="${ item.href }">
+                  <h3 class="h3-responsive text-justify">${ item.title }</h3>
                 </a>
               </div>
-              <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ top.img }" loading="lazy">
+              <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ item.img }" loading="lazy">
             </div>
           </div>
           `
