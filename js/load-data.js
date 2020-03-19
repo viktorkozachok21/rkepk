@@ -12,12 +12,13 @@ fetch('data/content.json')
                   <h3 class="h3-responsive text-justify">${ top.title }</h3>
                 </a>
               </div>
-              <img class="d-block carousel-img img-fluid w-100" src="${ top.img }" loading="lazy">
+              <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ top.img }" loading="lazy">
             </div>
           </div>
           `
       document.getElementById("carousel-inner").innerHTML += topTemplate;
     });
+    lazyLoadInstance.update();
   });
 
 $.getJSON('data/content.json', function(json) {
