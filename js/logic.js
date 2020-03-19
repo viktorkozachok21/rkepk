@@ -27,7 +27,7 @@ function loadContent(href) {
     document.getElementById("content").innerHTML = html;
     lazyLoadInstance.update();
   });
-  goToTop();
+  document.getElementById("content").scrollIntoView();
 };
 
 const modal = document.getElementById("full-image");
