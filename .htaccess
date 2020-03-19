@@ -1,5 +1,10 @@
 DirectoryIndex index.html
 
+# Remove the www prefix
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ http://rkepk.edu.ua/$1 [R=301,L]
+
 # Error 404 page
 ErrorDocument 404 /siteerror404.html
 

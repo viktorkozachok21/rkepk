@@ -10,10 +10,10 @@ fetch('data/content.json')
             <div class="view">
               <div class="caption w-100">
                 <a onclick="${ item.link }" href="${ item.href }">
-                  <h3 class="h3-responsive text-justify">${ item.title }</h3>
+                  <h2 class="h3-responsive text-justify">${ item.title }</h2>
                 </a>
               </div>
-              <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ item.img }" loading="lazy">
+              <img class="d-block carousel-img lazy img-fluid w-100" alt="${ item.title }" data-src="${ item.img }" loading="lazy">
             </div>
           </div>
           `
@@ -35,7 +35,7 @@ $.getJSON('data/content.json', function(json) {
               <div class="card news-line-item mb-2">
                   <div class="card-body">
                     <a onclick="${ post.link }" href="${ post.href }">
-                      <h5 class="card-title brown-text">${ post.title }</h5>
+                      <h4 class="card-title brown-text">${ post.title }</h4>
                     </a>
                     <p class="text-justify post-description">${ post.description }</p>
                     <span class="small float-right">${ post.posted }</span>
