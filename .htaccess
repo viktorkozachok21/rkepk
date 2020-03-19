@@ -1,5 +1,6 @@
 DirectoryIndex index.html
 
+# Error 404 page
 ErrorDocument 404 /siteerror404.html
 
 # One month for most static assets
@@ -7,7 +8,7 @@ ErrorDocument 404 /siteerror404.html
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
-## EXPIRES CACHING ##
+# Caching
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType image/jpg "access 1 year"
@@ -22,8 +23,8 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 2 days"
 </IfModule>
-## EXPIRES CACHING ##
 
+# gzip compression
 <ifModule mod_gzip.c>
   mod_gzip_on Yes
   mod_gzip_dechunk Yes
