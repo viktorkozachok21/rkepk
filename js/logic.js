@@ -28,6 +28,7 @@ ourLife.onclick = function() {
 };
 
 showContact.onclick = function() {
+  document.getElementById("content").innerHTML = "";
   document.getElementById("contact").scrollIntoView();
 };
 
