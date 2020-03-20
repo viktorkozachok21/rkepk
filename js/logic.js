@@ -19,6 +19,14 @@ window.onscroll = () => {
   }
 };
 
+ourLife.onclick = function() {
+  loadPosts();
+  document.getElementById("content").innerHTML = "";
+  document.getElementById("posts").scrollIntoView({
+    behavior: 'smooth'
+  });
+};
+
 showContact.onclick = function() {
   document.getElementById("contact").scrollIntoView();
 };

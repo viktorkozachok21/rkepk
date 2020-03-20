@@ -20,17 +20,17 @@ fetch('data/content.json')
     lazyLoadInstance.update();
   });
 
-
-$.getJSON('data/content.json', function(json) {
-  $('#lightPagination').pagination({
-    dataSource: json.posts,
-    autoHidePrevious: true,
-    autoHideNext: true,
-    pageSize: 5,
-    callback: function(data, pagination) {
-      var wrapper = $('#posts').empty();
-      $.each(data, function(item, post) {
-        let template = `
+function loadPosts() {
+  $.getJSON('data/content.json', function(json) {
+    $('#lightPagination').pagination({
+      dataSource: json.posts,
+      autoHidePrevious: true,
+      autoHideNext: true,
+      pageSize: 5,
+      callback: function(data, pagination) {
+        var wrapper = $('#posts').empty();
+        $.each(data, function(item, post) {
+          let template = `
 <div class="card news-line-item mb-2">
   <div class="card-body">
     <a onclick="${ post.link }" href="${ post.href }"><h4 class="card-title brown-text">${ post.title }</h4></a>
@@ -39,14 +39,16 @@ $.getJSON('data/content.json', function(json) {
   </div>
 </div>
   `
-        document.getElementById("posts").innerHTML += template;
-      });
-      var catalog = document.querySelector(".paginationjs-pages");
-      catalog.addEventListener('click', () => {
-        document.getElementById("posts").scrollIntoView({
-          behavior: 'smooth'
+          document.getElementById("posts").innerHTML += template;
         });
-      });
-    }
+        var catalog = document.querySelector(".paginationjs-pages");
+        catalog.addEventListener('click', () => {
+          document.getElementById("posts").scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      }
+    });
   });
-});
+}
+loadPosts();
