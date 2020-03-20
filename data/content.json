@@ -10,14 +10,14 @@
     "id": "3",
     "href": "http://testportal.gov.ua/",
     "link": "",
-    "img": "content-image/ZNO-2020.webp",
+    "img": "content-image/zno-2020.webp",
     "isactive": "",
     "title": "ЗНО-2020!"
   }, {
     "id": "2",
     "href": "javascript:;",
     "link": "loadContent('menu-content/open-door-days.html');",
-    "img": "content-image/Open-Door.webp",
+    "img": "content-image/open-door.webp",
     "isactive": "",
     "title": "День відкритих дверей 4 квітня та 16 травня 2020 року. Початок о 12:00!"
   }, {
