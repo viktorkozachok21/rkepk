@@ -1,5 +1,8 @@
 function goToTop() {
-  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
 };
 
 if ('scrollRestoration' in history) {
@@ -20,13 +23,13 @@ showContact.onclick = function() {
   document.getElementById("contact").scrollIntoView();
 };
 
-function loadContent(href) {
+async function loadContent(href) {
   fetch(href)
   .then(response => response.text())
   .then(html => {
+    document.getElementById("content").scrollIntoView();
     document.getElementById("content").innerHTML = html;
     lazyLoadInstance.update();
-    document.getElementById("content").scrollIntoView();
   });
 };
 

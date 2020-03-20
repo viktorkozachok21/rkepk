@@ -7,7 +7,6 @@ body, html {
   padding: 3px 7px;
   margin: 0;
   font-size: 1.1rem;
-  scroll-behavior: smooth;
   font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
 }
@@ -191,9 +190,8 @@ small {
   border-radius: 7px;
 }
 
-a.page-link:hover {
+a.page-link:hover, a.current {
   background: var(--link-bg-color);
-  border: 1px solid var(--button-bg-color);
 }
 
 .paginationjs-pages .active {

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129087929-1"></script>
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-129087929-1");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,16 +24,14 @@
   <meta name="twitter:description" content="Навчання в Рівненському кооперативному економіко-правовому коледжі – вивірений шлях до гідного вступу молодих людей в самостійне життя.">
   <meta name="twitter:image" content="http://rkepk.edu.ua/img/colege.webp">
   <meta name="twitter:url" content="http://rkepk.edu.ua" />
+  <meta name="google-site-verification" content="8qwQHXMzJreVxIelgbgD24WYOqC8kDAZpxvsSyeUgLY" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" as="style">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" as="style" data-async="true">
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" media="print" onload="this.media='all'" data-async="true">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" media="print" onload="this.media='all'" data-async="true">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" data-async="true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" media="print" onload="this.media='all'" data-async="true">
   <link rel="stylesheet" href="css/style.min.css">
+  <script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -58,7 +54,7 @@
         <div class="collapse navbar-collapse" id="basicNav">
           <ul class="navbar-nav w-100">
             <li class="nav-item">
-              <a class="nav-link" href="/">Наше життя</a>
+              <a class="nav-link current" href="/">Наше життя</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="aboutUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Про нас</a>
@@ -113,7 +109,7 @@
   <button onclick="goToTop()" id="go-top-btn"><i class="fas fa-arrow-up"></i></button>
   <main>
     <div class="row blue-grey lighten-4 m-1 mb-0 p-1">
-      <div class="col-md-8 col-sm-12 p-1 mb-0 pr-1" id="content">
+      <div class="col-md-8 col-sm-12 p-1 mb-0 pr-1">
         <div id="news-line">
           <div id="carousel" class="carousel slide mb-3 px-3" data-ride="carousel">
             <div class="carousel-inner" id="carousel-inner" role="listbox">
@@ -279,7 +275,7 @@
             </div>
             <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
               <div class="card-body p-0 m-0 dark-grey dark-text">
-                <div class="list-group">
+                <div class="list-group" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
                   <a onclick="loadContent('menu-content/commercial-department-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Відділення комерційної діяльності та права</a>
                   <a onclick="loadContent('menu-content/technology-department-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Технологічне відділення</a>
                 </div>
@@ -296,7 +292,7 @@
             </div>
             <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
               <div class="card-body p-0 m-0 dark-grey dark-text">
-                <div class="list-group">
+                <div class="list-group" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
                   <a onclick="loadContent('menu-content/commission/general-commission-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Загальноосвітніх дисциплін</a>
                   <a onclick="loadContent('menu-content/commission/computer-commission-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Математики, інформатики та комп'ютерної техніки</a>
                   <a onclick="loadContent('menu-content/commission/management-commission-page.html');" href="javascript:;" class="list-group-item list-group-item-action">Комерційної діяльності, менеджменту та товарознавства</a>
@@ -311,13 +307,23 @@
         </div>
       </div>
     </div>
+    <div class="row blue-grey lighten-4 m-1 mb-0 p-1">
+      <div class="col-12 p-1 mb-0" id="content"></div>
+    </div>
   </main>
   <footer>
-    <section class="section">
-      <h3 class="section-heading text-center" id="contact">Контакти</h3>
-      <div class="text-center section-description pt-1 blue-grey lighten-4">
-        <a href="mailto:rkepk@ukr.net" class="m-1 p-0"><i class="fas fa-envelope m-1"></i>E-mail: rkepk@ukr.net</a>
-        <p class="mb-3 p-0"><i class="fas fa-building m-1"></i>Наша адреса: 33000, м. Рівне, вул. Соборна, 10</p>
+    <div class="section p-1">
+      <h2 class="section-heading text-center" id="contact">Контакти</h2>
+      <div class="row blue-grey lighten-4 p-1 mb-1 text-center section-description">
+        <div class="col-12">
+          <a href="mailto:rkepk@ukr.net" class="m-0 p-1"><i class="fas fa-envelope"></i>E-mail: rkepk@ukr.net</a>
+        </div>
+        <div class="col-12">
+          <p class="m-0 p-1"><i class="fas fa-building"></i>Наша адреса: 33000, м. Рівне, вул. Соборна, 10</p>
+        </div>
+      </div>
+      <div class="row blue-grey lighten-4 p-1">
+        <div class="col-12 p-1 mb-0"></div>
       </div>
       <div class="row">
         <div class="col-md-5 col-sm-12 mb-4">
@@ -394,6 +400,9 @@
           </div>
         </div>
       </div>
+      <div class="row blue-grey lighten-4 p-1">
+        <div class="col-12 p-1 mb-0"></div>
+      </div>
       <div class="row p-3">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center">
           <div class="testimonial-card">
@@ -423,11 +432,11 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="author blue-grey lighten-4 row">
+    </div>
+    <div class="author blue-grey lighten-4 row">
       <h6 class="col-7">© 2020 Рівненський кооперативний економіко-правовий коледж</h6>
       <h6 class="col-5 text-right">33000, м. Рівне, вул. Соборна, 10</h6>
-    </section>
+    </div>
   </footer>
   <div id="full-image" class="modal">
     <span id="close-full" class="close">&times;</span>
@@ -439,6 +448,8 @@
   <script async src="js/load-data.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@13.0.1/dist/lazyload.min.js"></script>
   <script type="text/javascript">var lazyLoadInstance=new LazyLoad({elements_selector:".lazy"});</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129087929-1"></script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-129087929-1");</script>
 </body>
 
 </html>

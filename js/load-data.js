@@ -46,7 +46,9 @@ $.getJSON('data/content.json', function(json) {
       });
       var catalog = document.querySelector(".paginationjs-pages");
       catalog.addEventListener('click', () => {
-        document.getElementById("news-line").scrollIntoView();
+        document.getElementById("posts").scrollIntoView({
+          behavior: 'smooth'
+        });
       });
     }
   });
