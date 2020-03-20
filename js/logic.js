@@ -2,7 +2,7 @@ function goToTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
-});
+  });
 };
 
 if ('scrollRestoration' in history) {
@@ -23,14 +23,14 @@ showContact.onclick = function() {
   document.getElementById("contact").scrollIntoView();
 };
 
-async function loadContent(href) {
+function loadContent(href) {
   fetch(href)
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById("content").scrollIntoView();
-    document.getElementById("content").innerHTML = html;
-    lazyLoadInstance.update();
-  });
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("content").scrollIntoView();
+      document.getElementById("content").innerHTML = html;
+      lazyLoadInstance.update();
+    });
 };
 
 const modal = document.getElementById("full-image");
@@ -44,3 +44,23 @@ const span = document.getElementById("close-full");
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+const toggle = document.getElementById("toggle-full");
+document.addEventListener('fullscreenchange', (event) => {
+  if (!document.fullscreenElement) {
+    toggle.innerHTML = '<i class="fas fa-arrows-alt"></i>';
+  } else {
+    if (document.exitFullscreen) {
+      toggle.innerHTML = '<i class="fas fa-compress-arrows-alt"></i>';
+    }
+  }
+});
+toggle.addEventListener('click', (event) => {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+});

@@ -11,6 +11,10 @@ body, html {
   overflow-x: hidden;
 }
 
+.card-title:hover {
+    text-decoration: underline;
+}
+
 a {
   text-decoration: none;
   color: #2d3640 !important;
@@ -44,6 +48,15 @@ small {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 100;
+}
+
+#toggle-full {
+  cursor: pointer;
+  position: absolute;
+  font-size: 35px;
+  right: 1.5rem;
+  top: 8.3rem;
   z-index: 100;
 }
 
@@ -190,12 +203,14 @@ small {
   border-radius: 7px;
 }
 
-a.page-link:hover, a.current {
+a.page-link:hover, a.current, a.list-group-item:hover,
+li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hover{
+  cursor: pointer;
   background: var(--link-bg-color);
 }
 
 .paginationjs-pages .active {
-  background: #7d9c88;
+  background: #577963;
   cursor: default;
 }
 
@@ -268,6 +283,12 @@ a.page-link:hover, a.current {
     font-size: 1rem;
   }
 
+  #toggle-full {
+    left: 1.5rem;
+    top: 8.3rem;
+    right: auto;
+  }
+
   .logo-text {
     font-size: .9rem !important;
   }
@@ -308,6 +329,10 @@ a.page-link:hover, a.current {
 
   .logo img {
     width: 40px;
+  }
+
+  #toggle-full {
+    top: 4.5rem;
   }
 
   .logo-coop {

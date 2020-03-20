@@ -2,6 +2,9 @@
 <html lang="uk">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129087929-1"></script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-129087929-1");</script>
+  <script async src="https://www.google-analytics.com/analytics.js" type="text/javascript"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,13 +29,14 @@
   <meta name="twitter:url" content="http://rkepk.edu.ua" />
   <meta name="google-site-verification" content="8qwQHXMzJreVxIelgbgD24WYOqC8kDAZpxvsSyeUgLY" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" media="print" onload="this.media='all'" data-async="true">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" data-async="true">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" media="print" onload="this.media='all'" data-async="true">
-  <link rel="stylesheet" href="css/style.min.css">
-  <script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" data-async="true">
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" data-async="true">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&display=swap&subset=cyrillic" media="print" onload="this.media='all'" data-async="true">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" media="print" onload="this.media='all'" type="text/css" data-async="true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" data-async="true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" media="print" onload="this.media='all'" type="text/css" data-async="true">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" data-async="true">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -40,11 +44,11 @@
     <div class="brand d-flex text-justify navbar mb-1">
       <a class="navbar-brand logo" href="/">
         <div class="avatar mx-auto white">
-          <img src="img/logo.webp" class="rounded-circle" alt="Logo">
+          <img src="img/logo.jpg" class="rounded-circle" alt="Logo">
         </div>
         <h1 class="logo-text text-left text-uppercase">Рівненський кооперативний<br>економіко-правовий фаховий коледж</h1>
       </a>
-      <a href="http://coop.com.ua" target="_blank"><img src="img/coop.webp" class="rounded logo-coop float-right" alt="Coop"></a>
+      <a href="http://coop.com.ua" target="_blank"><img src="img/coop.jpg" class="rounded logo-coop float-right" alt="Coop"></a>
     </div>
     <nav class="navbar font-weight-bold text-dark navbar-expand-lg navbar-light lighten-4">
       <div class="main-menu text-end w-100">
@@ -105,6 +109,7 @@
         </div>
       </div>
     </nav>
+    <div id="toggle-full"><i class="fas fa-arrows-alt"></i></div>
   </header>
   <button onclick="goToTop()" id="go-top-btn"><i class="fas fa-arrow-up"></i></button>
   <main>
@@ -207,10 +212,10 @@
         <div class="card p-0 pt-3 mb-1 testimonial-card">
           <div class="card-up indigo lighten-1"></div>
           <div class="white">
-            <img data-src="img/director.webp" class="img-avatar lazy" alt="Директор коледжу С.І. Добридник">
+            <img data-src="img/director.jpg" class="img-avatar lazy" alt="Директор коледжу С.І. Добридник">
           </div>
           <div class="card-body p-3">
-            <h6 class="card-title text-center"><strong class="brown-text">Директор коледжу С.І. Добридник</strong>
+            <h6 class="text-center"><strong class="brown-text">Директор коледжу С.І. Добридник</strong>
               <br>Відмінник освіти України<br>
               Викладач-методист</h6>
             <hr>
@@ -219,7 +224,7 @@
               Навчання в Рівненському кооперативному економіко-правовому коледжі – це отримання міцних професійних знань, вивірений шлях до гідного вступу молодих людей в самостійне життя.
             </p>
             <div class="card p-1">
-              <img data-src="img/colege.webp" class="img-fluid lazy" alt="Коледж">
+              <img data-src="img/colege.jpg" class="img-fluid lazy" alt="Коледж">
             </div>
             <p class="text-justify font-italic">
               Знання та практичні навички, набуті в коледжі, допоможуть вам знайти своє місце в сучасних економічних умовах.
@@ -445,14 +450,12 @@
     <span id="close-full" class="close">&times;</span>
     <img class="modal-content" id="image">
   </div>
-  <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" type="text/javascript"></script>
   <script async src="js/logic.min.js" type="text/javascript"></script>
   <script async src="js/pagination.js" type="text/javascript"></script>
   <script async src="js/load-data.min.js" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@13.0.1/dist/lazyload.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@13.0.1/dist/lazyload.min.js" type="text/javascript"></script>
   <script type="text/javascript">var lazyLoadInstance=new LazyLoad({elements_selector:".lazy"});</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129087929-1"></script>
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-129087929-1");</script>
 </body>
 
 </html>
