@@ -150,18 +150,7 @@ small {
 }
 
 .map-container {
-  overflow: hidden;
-  position: relative;
-  height: 0;
   height: 550px;
-}
-
-.map-container iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
 }
 
 #go-top-btn {
@@ -307,7 +296,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
   }
 
   .map-container {
-    height: 450px !important;
+    height: 450px;
   }
 
   .title-responsive {
@@ -358,7 +347,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
   }
 
   .map-container {
-    height: 250px !important;
+    height: 300px;
   }
 
   .carousel-inner img {
