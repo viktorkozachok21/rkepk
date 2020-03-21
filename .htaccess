@@ -50,9 +50,6 @@ RewriteRule ^ http://rkepk.edu.ua/ [L]
 #  <filesmatch "\.(ico|jpg|jpeg|png|css|js|pdf)$">
 #    Header set Cache-Control "max-age=31536000, public"
 #  </filesmatch>
-#  <filesmatch "\.(html|json)$">
-#    Header set Cache-Control "max-age=7200, private, must-revalidate"
-#  </filesmatch>
 #</IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
