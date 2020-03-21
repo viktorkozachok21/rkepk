@@ -41,13 +41,13 @@
 <body>
   <header>
     <div class="brand d-flex text-justify navbar mb-1">
-      <a class="navbar-brand logo" href="/">
-        <div class="avatar mx-auto white">
+      <div class="avatar white d-flex">
+        <a class="navbar-brand logo" href="/">
           <img src="img/logo.jpg" class="rounded-circle" alt="Logo">
-        </div>
-        <h1 class="logo-text text-left text-uppercase">Рівненський кооперативний<br>економіко-правовий фаховий коледж</h1>
-      </a>
-      <a href="http://coop.com.ua" target="_blank"><img src="img/coop.jpg" class="rounded logo-coop float-right" alt="Coop"></a>
+        </a>
+      <h1 class="logo-text text-left mx-0 my-auto text-uppercase">Рівненський кооперативний<br>економіко-правовий фаховий коледж</h1>
+    </div>
+    <a href="http://coop.com.ua" target="_blank"><img src="img/coop.jpg" class="rounded logo-coop float-right" alt="Coop"></a>
     </div>
     <nav class="navbar font-weight-bold text-dark navbar-expand-lg navbar-light lighten-4">
       <div class="main-menu text-end w-100">
@@ -115,13 +115,13 @@
     <div class="row blue-grey lighten-4 m-1 mb-0 p-1">
       <div class="col-md-8 col-sm-12 p-1 mb-0 pr-1">
         <div id="news-line">
-          <div id="carousel" class="carousel slide mb-3 px-3" data-ride="carousel">
+          <div id="carousel" class="carousel slide mb-1 px-1" data-ride="carousel">
             <div class="carousel-inner" id="carousel-inner" role="listbox">
               <div id="carousel-view" class="carousel-item active">
                 <div class="view text-center">
                   <div class="caption w-100">
                     <a href="javascript:;">
-                      <h2 class="h3-responsive text-justify"></h2>
+                      <h2 class="text-justify"></h2>
                     </a>
                   </div>
                   <img class="d-block carousel-img lazy img-fluid w-100" data-src="img/download.png">
@@ -311,24 +311,29 @@
         </div>
       </div>
     </div>
+    <hr class="brown-text my-1">
     <div class="row blue-grey lighten-4 m-1 mb-0 p-1">
       <div class="col-12 p-1 mb-0" id="content"></div>
     </div>
+    <hr class="brown-text my-1">
   </main>
   <footer>
     <div class="section p-1">
       <h2 class="section-heading text-center" id="contact">Контакти</h2>
+      <hr class="my-1">
       <div class="row blue-grey lighten-4 p-1 mb-1 text-center section-description">
         <div class="col-12">
-          <a href="mailto:rkepk@ukr.net" class="m-0 p-1"><i class="fas fa-envelope"></i>E-mail: rkepk@ukr.net</a>
+          <a href="mailto:rkepk@ukr.net" class="m-0 p-1"><i class="fas fa-envelope mr-1"></i>E-mail: rkepk@ukr.net</a>
         </div>
         <div class="col-12">
-          <p class="m-0 p-1"><i class="fas fa-building"></i>Наша адреса: 33000, м. Рівне, вул. Соборна, 10</p>
+          <p class="m-0 p-1"><i class="fas fa-building mr-1"></i>Наша адреса: 33000, Україна, м. Рівне, вул. Соборна, 10</p>
         </div>
       </div>
+      <hr class="my-1">
       <div class="row blue-grey lighten-4 p-1">
         <div class="col-12 p-1 mb-0"></div>
       </div>
+      <hr class="my-1">
       <div class="row">
         <div class="col-md-5 col-sm-12 mb-4">
           <div id="map-container-google-1" class="map-container">
@@ -404,9 +409,11 @@
           </div>
         </div>
       </div>
+      <hr class="my-1">
       <div class="row blue-grey lighten-4 p-1">
         <div class="col-12 p-1 mb-0"></div>
       </div>
+      <hr class="my-1">
       <div class="row p-3">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center">
           <div class="testimonial-card">
@@ -440,10 +447,17 @@
     <div class="row blue-grey lighten-4 p-1 mb-1">
       <div class="col-12 p-1"></div>
     </div>
-    <div class="author blue-grey lighten-4 row">
-      <h6 class="col-7">© 2020 Рівненський кооперативний економіко-правовий коледж</h6>
-      <h6 class="col-5 text-right">33000, м. Рівне, вул. Соборна, 10</h6>
+    <hr class="my-1">
+    <div class="author blue-grey lighten-4 row pb-0">
+      <p class="col-7 mb-1">&copy; <script>document.write(new Date().getFullYear())</script> Всі права захищено<br>Рівненський кооперативний економіко-правовий фаховий коледж</p>
+      <span class="col-1 p-1">
+        <a class="li-ic" role="button" href="https://www.linkedin.com/in/viktorkozachok" target="_blank" title="Developer">
+          <i class="fab fa-sm fa-linkedin-in"></i>
+        </a>
+      </span>
+      <p class="col-4 text-right mb-1">33000, Україна, м. Рівне<br>вул. Соборна, 10</p>
     </div>
+    <hr class="my-1">
   </footer>
   <div id="full-image" class="modal">
     <span id="close-full" class="close">&times;</span>

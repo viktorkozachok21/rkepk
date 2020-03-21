@@ -69,17 +69,22 @@ small {
 
 .caption {
   position: absolute;
-  padding: 10px 15px 0 15px;
+  padding: .3rem 0 0 .3rem;
+  margin: auto;
   bottom: 0;
   background: var(--button-bg-color);
   z-index: 100;
   font-size: .9rem;
 }
 
-.h3-responsive {
-  font-weight: bold;
+.title-responsive {
   float: left;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .carousel-inner img {
@@ -301,8 +306,8 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
     height: 450px !important;
   }
 
-  .h3-responsive {
-    font-size: .9rem !important;
+  .title-responsive {
+    font-size: 1rem !important;
   }
 
   .modal {
@@ -337,6 +342,10 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 
   .logo-coop {
     width: 60px;
+  }
+
+  .title-responsive {
+    font-size: .8rem !important;
   }
 
   .avatar-content {

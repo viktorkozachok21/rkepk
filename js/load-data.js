@@ -9,7 +9,7 @@ fetch('data/content.json')
 <div class="carousel-item ${ item.isactive }">
   <div class="view">
     <div class="caption w-100">
-      <a onclick="${ item.link }" href="${ item.href }"><h2 class="h3-responsive text-justify">${ item.title }</h2></a>
+      <a onclick="${ item.link }" href="${ item.href }"><h5 class="title-responsive text-justify">${ item.title }</h5></a>
     </div>
     <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ item.img }" alt="${ item.title }" loading="lazy">
   </div>
@@ -33,7 +33,7 @@ function loadPosts() {
           let template = `
 <div class="card news-line-item mb-2">
   <div class="card-body">
-    <a onclick="${ post.link }" href="${ post.href }"><h4 class="card-title brown-text">${ post.title }</h4></a>
+    <a onclick="${ post.link }" href="${ post.href }"><h6 class="card-title brown-text">${ post.title }</h6></a>
     <p class="text-justify post-description">${ post.description }</p>
     <span class="small float-right">${ post.posted }</span>
   </div>
