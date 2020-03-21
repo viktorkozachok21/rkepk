@@ -25,6 +25,10 @@ small {
   font-size: .7rem;
 }
 
+.preload-card {
+  height: 100px;
+}
+
 .main-menu {
   min-height: 2rem;
 }

@@ -12,7 +12,7 @@ RewriteRule ^ http://rkepk.edu.ua/ [L]
     Header set Expires 0
 </IfModule>
 
-<FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
+<FilesMatch "\.(css|html|ico|jpeg|jpg|js|png|pdf)$">
     <IfModule mod_expires.c>
         ExpiresActive Off
     </IfModule>
