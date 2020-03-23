@@ -1,9 +1,12 @@
 DirectoryIndex index.html
 
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ http://rkepk.edu.ua/ [L]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ http://rkepk.edu.ua/ [L]
+</IfModule>
 
 # Error 404 page
 ErrorDocument 404 /siteerror404.html
