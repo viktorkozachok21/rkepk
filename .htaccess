@@ -11,49 +11,26 @@ DirectoryIndex index.html
 # Error 404 page
 ErrorDocument 404 /siteerror404.html
 
-# DISABLE CACHING
-#<IfModule mod_headers.c>
-#    Header set Cache-Control "no-cache, no-store, must-revalidate"
-#    Header set Pragma "no-cache"
-#    Header set Expires 0
-#</IfModule>
-#<FilesMatch "\.(css|html|ico|jpeg|jpg|js|png|pdf)$">
-#    <IfModule mod_expires.c>
-#        ExpiresActive Off
-#    </IfModule>
-#    <IfModule mod_headers.c>
-#        FileETag None
-#        Header unset ETag
-#        Header unset Pragma
-#        Header unset Cache-Control
-#        Header unset Last-Modified
-#        Header set Pragma "no-cache"
-#        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
-#        Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
-#    </IfModule>
-#</FilesMatch>
-
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE image/jpg
-  AddOutputFilterByType DEFLATE image/png
-  AddOutputFilterByType DEFLATE image/jpeg
-  AddOutputFilterByType DEFLATE image/x-icon
-  AddOutputFilterByType DEFLATE text/css
-  AddOutputFilterByType DEFLATE text/javascript
-  AddOutputFilterByType DEFLATE text/xml
-</IfModule>
-<IfModule mod_expires.c>
-  ExpiresActive on
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType text/css "access plus 1 year"
-</IfModule>
 <IfModule mod_headers.c>
-  <filesmatch "\.(ico|jpg|jpeg|png|css|pdf)$">
-    Header set Cache-Control "max-age=2628000, public"
-  </filesmatch>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
 </IfModule>
+<FilesMatch "\.(css|html|ico|jpeg|jpg|js|png|pdf)$">
+    <IfModule mod_expires.c>
+        ExpiresActive Off
+    </IfModule>
+    <IfModule mod_headers.c>
+        FileETag None
+        Header unset ETag
+        Header unset Pragma
+        Header unset Cache-Control
+        Header unset Last-Modified
+        Header set Pragma "no-cache"
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Expires "Thu, 1 Jan 2000 00:00:00 GMT"
+    </IfModule>
+</FilesMatch>
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php56” package as the default “PHP” programming language.
