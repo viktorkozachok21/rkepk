@@ -1,12 +1,9 @@
 DirectoryIndex index.html
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ http://rkepk.edu.ua/ [L]
-</IfModule>
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ http://rkepk.edu.ua/ [L]
 
 # Error 404 page
 ErrorDocument 404 /siteerror404.html
@@ -39,6 +36,6 @@ ErrorDocument 404 /siteerror404.html
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.rkepk.edu.ua
+RewriteEngine On
+RewriteCond %{HTTP_HOST} www.rkepk.edu.ua
 RewriteRule (.*) http://rkepk.edu.ua/$1 [R=301,L]
