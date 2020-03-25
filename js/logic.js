@@ -57,10 +57,10 @@ span.onclick = function() {
 const toggle = document.getElementById("toggle-full");
 document.addEventListener('fullscreenchange', (event) => {
   if (!document.fullscreenElement) {
-    toggle.innerHTML = '<i class="fas fa-arrows-alt"></i>';
+    toggle.innerHTML = '<span class="mdi mdi-fullscreen"></span>';
   } else {
     if (document.exitFullscreen) {
-      toggle.innerHTML = '<i class="fas fa-compress-arrows-alt"></i>';
+      toggle.innerHTML = '<span class="mdi mdi-fullscreen-exit"></span>';
     }
   }
 });
