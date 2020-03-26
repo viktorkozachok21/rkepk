@@ -11,7 +11,7 @@
     "href": "javascript:;",
     "link": "loadContent('menu-content/open-door-days.html');",
     "img": "content-image/open-door.jpg",
-    "title": "День відкритих дверей 4 квітня та 16 травня 2020 року. Початок о 12:00!"
+    "title": "День відкритих дверей 16 травня 2020 року. Початок о 12:00!"
   }, {
     "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
     "img": "content-image/remote-work.jpg",
@@ -19,6 +19,12 @@
     "title": "Дистанційне навчання"
   }],
   "posts": [{
+    "href": "https://www.ukrinform.ua/rubric-society/2895549-v-ukraini-tritiznevij-karantin-cerez-koronavirus.html",
+    "link": "",
+    "title": "25 березня надзвичайну ситуацію запроваджено по всій Україні.<br>Карантин подовжено до 24 квітня.",
+    "posted": "26 березня 2020 р.",
+    "description": "Закрито заклади торгівлі, крім продуктових магазинів, аптек, автозаправок і банків. Також зупинено роботу метрополітенів у Києві, Харкові та Дніпрі, припинено міжміське й міжобласне автомобільне, залізничне та авіасполучення."
+  }, {
     "href": "javascript:;",
     "link": "loadContent('news-content/2020/24-03/content.html');",
     "title": "Кваліфікаційний іспит",
