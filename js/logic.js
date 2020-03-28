@@ -1,7 +1,24 @@
 function goToTop() {
-  window.scrollTo({
+  window.scroll({
     top: 0,
     behavior: "smooth"
+  });
+};
+
+function closeMenu() {
+  document.getElementById("basicNav").classList.remove("show");
+};
+
+function closeAccordion(id) {
+  document.getElementById(id).classList.remove("show");
+};
+
+function goToDiv(id) {
+  let top = document.getElementById(id).getBoundingClientRect().top + pageYOffset;
+  let navbar = document.getElementById("navbar").offsetHeight;
+  window.scroll({
+    top: top - navbar - 3,
+    behavior: 'smooth'
   });
 };
 
@@ -22,21 +39,22 @@ window.onscroll = () => {
 ourLife.onclick = function() {
   loadPosts();
   document.getElementById("content").innerHTML = "";
-  document.getElementById("posts").scrollIntoView({
-    behavior: 'smooth'
-  });
+  closeMenu();
+  goToDiv("posts");
 };
 
 showContact.onclick = function() {
   document.getElementById("content").innerHTML = "";
-  document.getElementById("contact").scrollIntoView();
+  closeMenu();
+  goToDiv("content");
 };
 
 function loadContent(href) {
   fetch(href)
     .then(response => response.text())
     .then(html => {
-      document.getElementById("content").scrollIntoView();
+      closeMenu();
+      goToDiv("content");
       document.getElementById("content").innerHTML = html;
       lazyLoadInstance.update();
     });

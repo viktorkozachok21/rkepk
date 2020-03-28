@@ -4,15 +4,20 @@
 }
 
 body, html {
-  padding: 3px 7px;
+  padding: 0;
+  padding-top: 2rem;
   margin: 0;
   font-size: 1.1rem;
   font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-size: 2rem;
+}
+
 .card-title:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a {
@@ -51,7 +56,7 @@ small {
 .nav-button {
   position: absolute;
   right: 0;
-  top: 0;
+  top: .2rem;
   z-index: 100;
 }
 
@@ -60,7 +65,7 @@ small {
   position: absolute;
   font-size: 35px;
   right: 1.3rem;
-  top: 8.3rem;
+  top: .2rem;
   z-index: 100;
 }
 
@@ -105,7 +110,7 @@ small {
   width: 200px;
 }
 
-.logo img {
+.navbar-brand img {
   width: 100px;
 }
 
@@ -197,25 +202,25 @@ small {
 
 .paginationjs-page, .paginationjs-prev, .paginationjs-next {
   color: #333336;
-  font-size: 1.5rem;
-  line-height: 35px;
+  font-size: 1.3rem;
+  line-height: 25px;
   font-weight: bold;
   text-align: center;
   border: 1px solid var(--link-bg-color);
-  min-width: 35px;
-  padding: 3px 15px;
+  min-width: 15px;
+  padding: 5px 15px;
   margin: 1px;
   border-radius: 7px;
 }
 
 a.page-link:hover, a.current, a.list-group-item:hover,
-li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hover{
+li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hover {
   cursor: pointer;
   background: var(--link-bg-color);
 }
 
 .paginationjs-pages .active {
-  background: #577963;
+  background: #66786d;
   cursor: default;
 }
 
@@ -240,7 +245,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -256,8 +261,13 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 .close {
@@ -278,19 +288,24 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 }
 
 .img-avatar {
-    border-radius: 10%;
-    height: 11rem;
-    width: 10rem;
+  border-radius: 10%;
+  height: 11rem;
+  width: 10rem;
 }
 
 @media only screen and (max-width: 1000px) {
   body, html {
     font-size: 1rem;
+    padding-top: 1.6rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.35rem;
   }
 
   #toggle-full {
-    left: 1.3rem;
-    top: 8.3rem;
+    left: 1rem;
+    top: -3px;
     right: auto;
   }
 
@@ -299,7 +314,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
   }
 
   .current {
-    margin: 0 50px;
+    margin: 0 45px;
   }
 
   .carousel-inner img {
@@ -323,10 +338,6 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
     transform: scale(1)
   }
 
-  .light-theme a, .light-theme span {
-    font-size: 1.3rem;
-  }
-
   .dropdown-menu {
     width: 100%;
   }
@@ -337,16 +348,21 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 }
 
 @media only screen and (max-width: 700px) {
+  body, html {
+    font-size: .9rem;
+    padding-top: 1.5rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
   .logo-text {
-    font-size: .5rem !important;
+    font-size: .6rem !important;
   }
 
-  .logo img {
+  .navbar-brand img {
     width: 40px;
-  }
-
-  #toggle-full {
-    top: 4.5rem;
   }
 
   .logo-coop {
@@ -368,9 +384,5 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 
   .carousel-inner img {
     height: 55vw;
-  }
-
-  .light-theme a, .light-theme span {
-    font-size: 1rem;
   }
 }
