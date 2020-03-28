@@ -43,9 +43,7 @@ function loadPosts() {
         });
         var catalog = document.querySelector(".paginationjs-pages");
         catalog.addEventListener('click', () => {
-          document.getElementById("posts").scrollIntoView({
-            behavior: 'smooth'
-          });
+          goToDiv("posts");
         });
       }
     });
