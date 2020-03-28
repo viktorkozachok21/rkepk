@@ -17,8 +17,7 @@ function goToDiv(id) {
   let top = document.getElementById(id).getBoundingClientRect().top + pageYOffset;
   let navbar = document.getElementById("navbar").offsetHeight;
   window.scroll({
-    top: top - navbar - 3,
-    behavior: 'smooth'
+    top: top - navbar - 3
   });
 };
 
@@ -36,16 +35,9 @@ window.onscroll = () => {
   }
 };
 
-ourLife.onclick = function() {
-  loadPosts();
-  document.getElementById("content").innerHTML = "";
-  closeMenu();
-  goToDiv("posts");
-};
-
 showContact.onclick = function() {
-  document.getElementById("content").innerHTML = "";
   closeMenu();
+  document.getElementById("content").innerHTML = "";
   goToDiv("content");
 };
 
@@ -54,9 +46,9 @@ function loadContent(href) {
     .then(response => response.text())
     .then(html => {
       closeMenu();
-      goToDiv("content");
       document.getElementById("content").innerHTML = html;
       lazyLoadInstance.update();
+      goToDiv("content");
     });
 };
 
