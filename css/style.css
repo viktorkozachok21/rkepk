@@ -170,9 +170,9 @@ small {
 
 #go-top-btn {
   position: fixed;
-  bottom: 5rem;
-  max-width: 50px;
-  max-height: 50px;
+  bottom: 5.5rem;
+  width: 45px;
+  height: 45px;
   background: none;
   color: var(--button-bg-color);
   right: 1rem;
@@ -343,7 +343,8 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 
   #go-top-btn:hover {
     color: var(--button-bg-color);
-    transform: scale(1)
+    right: .3rem;
+    transform: none;
   }
 
   .dropdown-menu {

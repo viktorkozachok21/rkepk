@@ -5,6 +5,10 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ http://rkepk.edu.ua/ [L]
 
+RewriteBase /
+RewriteCond %{QUERY_STRING} !^$
+RewriteRule ^$ /? [L,R=301]
+
 # Error 404 page
 ErrorDocument 404 /siteerror404.html
 
