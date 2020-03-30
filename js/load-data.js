@@ -9,7 +9,7 @@ fetch('data/content.json')
 <div class="carousel-item ${ item.isactive }">
   <div class="view">
     <div class="caption w-100">
-      <a onclick="${ item.link }" href="${ item.href }"><h5 class="title-responsive text-justify">${ item.title }</h5></a>
+      <a onclick="${ item.link }" href="${ item.href }" target="${ item.target }"><h5 class="title-responsive text-justify">${ item.title }</h5></a>
     </div>
     <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ item.img }" alt="${ item.title }" loading="lazy">
   </div>

@@ -1,19 +1,23 @@
 {
   "top": [{
-    "href": "https://covid19.com.ua/",
+    "href": "https://phc.org.ua/news/covid-19-i-grip-scho-mizh-nimi-spilnogo-i-vidminnogo",
+    "target": "_blank",
     "img": "content-image/news.jpg",
-    "title": "Увага, коронавірус!"
-  }, {
-    "href": "http://testportal.gov.ua/",
-    "img": "content-image/zno-2020.jpg",
-    "title": "ЗНО-2020!"
+    "title": "Увага, вірус!"
   }, {
     "href": "javascript:;",
-    "link": "loadContent('menu-content/open-door-days.html');",
-    "img": "content-image/open-door.jpg",
-    "title": "День відкритих дверей 16 травня 2020 року. Початок о 12:00!"
+    "link": "loadContent('news-content/2020/30-03/content.html');",
+    "target": "",
+    "img": "content-image/weekend.jpg",
+    "title": "Змушені Вам нагадати, що ми не на канікулах!!!"
+  }, {
+    "href": "http://testportal.gov.ua/",
+    "target": "_blank",
+    "img": "content-image/zno-2020.jpg",
+    "title": "ЗНО 2020!"
   }, {
     "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
+    "target": "_blank",
     "img": "content-image/remote-work.jpg",
     "isactive": "active",
     "title": "Дистанційне навчання"
