@@ -305,6 +305,16 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
   width: 10rem;
 }
 
+.out-of {
+  font-style: italic;
+  color: #5c7c61 !important;
+}
+
+.out-of:hover{
+  background: #5c6660;
+  color: #e2e4d3 !important;
+}
+
 @media only screen and (max-width: 1000px) {
   body, html {
     font-size: 1rem;

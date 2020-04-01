@@ -33,7 +33,7 @@ function loadPosts() {
           let template = `
 <div class="card news-line-item mb-2">
   <div class="card-body">
-    <a onclick="${ post.link }" href="${ post.href }"><h6 class="card-title brown-text">${ post.title }</h6></a>
+    <a onclick="${ post.link }" href="${ post.href }" target="${ post.target }"><h6 class="card-title brown-text">${ post.title }</h6></a>
     <p class="text-justify post-description">${ post.description }</p>
     <span class="small float-right">${ post.posted }</span>
   </div>
