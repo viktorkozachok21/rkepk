@@ -1,9 +1,11 @@
 {
   "top": [{
-    "href": "https://www.unian.ua/lite/holidays/10945832-blagovishchennya-7-kvitnya-2020-zaboroni-prikmeti-ta-istoriya-svyata.html",
-    "target": "_blank",
-    "img": "content-image/annunciation.jpg",
-    "title": "З Днем Благовіщення"
+    "href": "javascript:;",
+    "link": "loadContent('menu-content/session.html');",
+    "target": "",
+    "img": "content-image/session.png",
+    "isactive": "active",
+    "title": "Заліково-екзаменаційна сесія!"
   }, {
     "href": "https://phc.org.ua/news/covid-19-i-grip-scho-mizh-nimi-spilnogo-i-vidminnogo",
     "target": "_blank",
@@ -24,10 +26,16 @@
     "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
     "target": "_blank",
     "img": "content-image/remote-work.jpg",
-    "isactive": "active",
     "title": "Дистанційне навчання"
   }],
   "posts": [{
+    "href": "javascript:;",
+    "link": "loadContent('menu-content/session.html');",
+    "target": "",
+    "title": "З метою підготовки до складання літньої заліково - екзаменаційної сесії 2019 -2020 н.р., заздалегідь повідомляємо Вам форми підсумкового контролю та переліки питань до заліку, екзамену, підсумкового контролю з дисциплін.",
+    "posted": "",
+    "description": "Шановні студенти! Продовжуємо працювати онлайн. У разі виникнення запитань звертайтесь до класного керівника та викладачів"
+  }, {
     "href": "https://www.ukrinform.ua/rubric-society/2895549-v-ukraini-tritiznevij-karantin-cerez-koronavirus.html",
     "link": "",
     "target": "_blank",
