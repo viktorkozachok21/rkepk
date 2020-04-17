@@ -7,34 +7,33 @@
     "isactive": "active",
     "title": "Заліково-екзаменаційна сесія!"
   }, {
-    "href": "https://phc.org.ua/news/covid-19-i-grip-scho-mizh-nimi-spilnogo-i-vidminnogo",
+    "href": "https://nv.ua/ukr/style/lifestyle/velikden-2020-koli-velikden-v-ukrajini-shcho-mozhna-i-ne-mozhna-robiti-tradiciji-i-istoriya-50016823.html",
     "target": "_blank",
-    "img": "content-image/news.jpg",
-    "title": "Увага, вірус!"
-  }, {
-    "href": "javascript:;",
-    "link": "loadContent('news-content/2020/30-03/content.html');",
-    "target": "",
-    "img": "content-image/weekend.jpg",
-    "title": "Змушені Вам нагадати, що ми не на канікулах!!!"
-  }, {
-    "href": "http://testportal.gov.ua/",
-    "target": "_blank",
-    "img": "content-image/zno-2020.jpg",
-    "title": "ЗНО 2020!"
+    "img": "content-image/easter.jpg",
+    "title": "Великдень 2020"
   }, {
     "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
     "target": "_blank",
     "img": "content-image/remote-work.jpg",
     "title": "Дистанційне навчання"
+  }, {
+    "href": "https://phc.org.ua/news/covid-19-i-grip-scho-mizh-nimi-spilnogo-i-vidminnogo",
+    "target": "_blank",
+    "img": "content-image/news.jpg",
+    "title": "Увага, вірус!"
+  }, {
+    "href": "http://testportal.gov.ua/",
+    "target": "_blank",
+    "img": "content-image/zno-2020.jpg",
+    "title": "ЗНО 2020"
   }],
   "posts": [{
     "href": "javascript:;",
     "link": "loadContent('menu-content/session.html');",
     "target": "",
-    "title": "З метою підготовки до складання літньої заліково - екзаменаційної сесії 2019 -2020 н.р., заздалегідь повідомляємо Вам форми підсумкового контролю та переліки питань до заліку, екзамену, підсумкового контролю з дисциплін.",
+    "title": "Шановні студенти!",
     "posted": "",
-    "description": "Шановні студенти! Продовжуємо працювати онлайн. У разі виникнення запитань звертайтесь до класного керівника та викладачів"
+    "description": "З метою підготовки до складання літньої заліково - екзаменаційної сесії 2019-2020 н.р., заздалегідь повідомляємо Вам форми підсумкового контролю та переліки питань до заліку, екзамену, підсумкового контролю з дисциплін."
   }, {
     "href": "https://www.ukrinform.ua/rubric-society/2895549-v-ukraini-tritiznevij-karantin-cerez-koronavirus.html",
     "link": "",
