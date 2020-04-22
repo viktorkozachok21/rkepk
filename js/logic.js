@@ -63,23 +63,3 @@ const span = document.getElementById("close-full");
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-const toggle = document.getElementById("toggle-full");
-document.addEventListener('fullscreenchange', (event) => {
-  if (!document.fullscreenElement) {
-    toggle.innerHTML = '<span class="mdi mdi-fullscreen"></span>';
-  } else {
-    if (document.exitFullscreen) {
-      toggle.innerHTML = '<span class="mdi mdi-fullscreen-exit"></span>';
-    }
-  }
-});
-toggle.addEventListener('click', (event) => {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen();
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    }
-  }
-});

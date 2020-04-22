@@ -1,6 +1,6 @@
 :root {
-  --button-bg-color: #333336;
-  --link-bg-color: #9f997c;
+  --button-bg-color: rgba(51, 51, 54, 0.7);
+  --link-bg-color: rgba(68, 70, 58, 0.5);
 }
 
 body, html {
@@ -56,15 +56,6 @@ small {
 .nav-button {
   position: absolute;
   right: 0;
-  top: .2rem;
-  z-index: 100;
-}
-
-#toggle-full {
-  cursor: pointer;
-  position: absolute;
-  font-size: 35px;
-  right: 1.3rem;
   top: .2rem;
   z-index: 100;
 }
@@ -209,14 +200,14 @@ small {
 }
 
 .paginationjs-page, .paginationjs-prev, .paginationjs-next {
-  color: #333336;
-  font-size: 1.3rem;
-  line-height: 25px;
+  color: var(--button-bg-color);
+  font-size: 1.2rem;
+  line-height: 27px;
   font-weight: bold;
   text-align: center;
   border: 1px solid var(--link-bg-color);
-  min-width: 13px;
-  padding: 5px 10px;
+  min-width: 15px;
+  padding: 3px 10px;
   margin: 1px;
   border-radius: 7px;
 }
@@ -228,7 +219,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 }
 
 .paginationjs-pages .active {
-  background: #66786d;
+  background: var(--link-bg-color);
   cursor: default;
 }
 
@@ -321,12 +312,6 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
     font-size: 1.35rem;
   }
 
-  #toggle-full {
-    left: 1rem;
-    top: -3px;
-    right: auto;
-  }
-
   .logo-text {
     font-size: .9rem !important;
   }
@@ -347,9 +332,12 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
     font-size: 1rem !important;
   }
 
+  #go-top-btn {
+    transform: none;
+    animation: none;
+  }
+
   #go-top-btn:hover {
-    color: var(--button-bg-color);
-    right: .3rem;
     transform: none;
   }
 
@@ -385,7 +373,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
   }
 
   .caption {
-    height: 2em;
+    height: 1.7em;
   }
 
   .title-responsive {
