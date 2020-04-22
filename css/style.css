@@ -77,13 +77,13 @@ small {
 }
 
 .caption {
-  position: absolute;
-  padding: .3rem 0 0 .3rem;
-  margin: auto;
-  bottom: 0;
-  background: var(--button-bg-color);
-  z-index: 100;
-  font-size: .9rem;
+  position: relative;
+  padding: .3rem 0 0 .5rem;
+  top: 0;
+  height: 2em;
+  background: linear-gradient(to right, var(--button-bg-color), transparent);
+  opacity: .9;
+  z-index: 1;
 }
 
 .title-responsive {
@@ -111,7 +111,7 @@ small {
 }
 
 .navbar-brand img {
-  width: 100px;
+  width: 90px;
 }
 
 .navbar-brand {
@@ -154,10 +154,6 @@ small {
   -webkit-box-orient: vertical;
 }
 
-.map-container {
-  height: 550px;
-}
-
 @keyframes fadeIn {
   from {
     transform: translateX(1rem);
@@ -198,8 +194,8 @@ small {
   border: none;
   display: block;
   overflow: hidden;
-  padding: 5px;
-  margin: 5px;
+  padding: 3px;
+  margin: 3px;
 }
 
 .simple-pagination ul {
@@ -219,8 +215,8 @@ small {
   font-weight: bold;
   text-align: center;
   border: 1px solid var(--link-bg-color);
-  min-width: 15px;
-  padding: 5px 15px;
+  min-width: 13px;
+  padding: 5px 10px;
   margin: 1px;
   border-radius: 7px;
 }
@@ -244,7 +240,7 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 }
 
 .logo-coop {
-  width: 150px;
+  width: 130px;
 }
 
 .modal {
@@ -386,6 +382,10 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 
   .logo-coop {
     width: 60px;
+  }
+
+  .caption {
+    height: 2em;
   }
 
   .title-responsive {

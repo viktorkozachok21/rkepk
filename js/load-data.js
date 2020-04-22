@@ -8,10 +8,12 @@ fetch('data/content.json')
       let topTemplate = `
 <div class="carousel-item ${ item.isactive }">
   <div class="view">
+  <a onclick="${ item.link }" href="${ item.href }" target="${ item.target }">
     <div class="caption w-100">
-      <a onclick="${ item.link }" href="${ item.href }" target="${ item.target }"><h5 class="title-responsive text-justify">${ item.title }</h5></a>
+      <h5 class="title-responsive text-justify">${ item.title }</h5>
     </div>
     <img class="d-block carousel-img lazy img-fluid w-100" data-src="${ item.img }" alt="${ item.title }" loading="lazy">
+    </a>
   </div>
 </div>
   `
