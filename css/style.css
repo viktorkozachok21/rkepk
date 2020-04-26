@@ -360,6 +360,11 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
     font-size: 1.2rem;
   }
 
+  .video-player {
+    width: 90%;
+    height: 20rem;
+  }
+
   .logo-text {
     font-size: .6rem !important;
   }
