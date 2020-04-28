@@ -141,6 +141,22 @@ a {
   -webkit-box-orient: vertical;
 }
 
+.post-image {
+  padding: 3.5rem;
+  min-height: 7rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.post-image img {
+  top: .2rem;
+  left: .2rem;
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 @keyframes fadeIn {
   from {
     transform: translateX(1rem);

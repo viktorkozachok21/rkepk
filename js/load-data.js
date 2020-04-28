@@ -34,10 +34,18 @@ function loadPosts() {
         $.each(data, function(item, post) {
           let template = `
 <div class="card news-line-item mb-2">
-  <div class="card-body text-center p-2 px-3">
-    <h5 class="card-title font-weight-bold brown-text m-1"><a onclick="${ post.link }" href="${ post.href }" target="${ post.target }">${ post.title }</a></h5>
+  <div class="card-body text-center p-2 px-3 row">
+  <div class="col-3 post-image text-center mb-1">
+    <a onclick="${ post.link }" href="${ post.href }" target="${ post.target }">
+      <img src="${ post.img }" alt="news-line" class="img-fruid mr-2">
+    </a>
+  </div>
+    <div class="col-9">
+      <h6 class="card-title font-weight-bold brown-text m-1">
+        <a onclick="${ post.link }" href="${ post.href }" target="${ post.target }">${ post.title }</a>
+      </h6>
     <p class="text-justify post-description mt-0">${ post.description }</p>
-    <span class="small font-italic float-right">${ post.posted }</span>
+    <span class="small font-italic float-right">${ post.posted }</span></div>
   </div>
 </div>
   `
