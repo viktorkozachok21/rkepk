@@ -137,10 +137,6 @@ a {
   padding: .7em;
 }
 
-.show .nav-link {
-  background: var(--link-bg-color);
-}
-
 .dropdown-menu {
   border: none;
   transform: translateY(5px);
@@ -177,7 +173,7 @@ a {
 
 .news-line-item {
   border-radius: 0;
-  padding: 1em;
+  padding: .3em 1em;
   box-shadow: none;
 }
 
@@ -437,6 +433,11 @@ li.paginationjs-page:hover, li.paginationjs-prev:hover, li.paginationjs-next:hov
 
   .title-responsive {
     font-size: .8rem !important;
+  }
+
+  .nav-link {
+    margin-top: .3em;
+    margin-left: auto;
   }
 
   .avatar-content {
