@@ -142,15 +142,15 @@ a {
 }
 
 .post-image {
-  padding: 3.5rem;
-  min-height: 7rem;
   overflow: hidden;
   position: relative;
+  max-height: 7rem;
 }
 
 .post-image img {
-  top: .2rem;
-  left: .2rem;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
   object-fit: cover;
   position: absolute;
   height: 100%;
