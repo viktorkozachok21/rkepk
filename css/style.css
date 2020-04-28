@@ -30,6 +30,10 @@ a {
   height: 100px;
 }
 
+.news-line-item {
+  border-radius: 0;
+}
+
 .main-menu {
   min-height: 2rem;
 }

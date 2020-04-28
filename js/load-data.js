@@ -33,7 +33,7 @@ function loadPosts() {
         var wrapper = $('#posts').empty();
         $.each(data, function(item, post) {
           let template = `
-<div class="card news-line-item mb-2">
+<div class="card news-line-item mb-1">
   <div class="card-body text-center p-2 px-3 row">
     <div class="col-3 post-image text-center">
       <a onclick="${ post.link }" href="${ post.href }" target="${ post.target }">
