@@ -1,10 +1,20 @@
 {
   "top": [{
     "href": "javascript:;",
+    "target": "",
+    "isactive": "active",
+    "img": "content-image/open-door1.jpg",
+    "title": "Запрошуємо на навчання"
+  }, {
+    "href": "javascript:;",
+    "target": "",
+    "img": "content-image/open-door2.jpg",
+    "title": "Запрошуємо на навчання"
+  }, {
+    "href": "javascript:;",
     "link": "loadContent('menu-content/session.html');",
     "target": "",
     "img": "content-image/session.png",
-    "isactive": "active",
     "title": "Заліково-екзаменаційна сесія!"
   }, {
     "href": "https://drive.google.com/open?id=1il7ucZeDGVzcnQbyfcPTrRccytSik9dh",
@@ -31,13 +41,13 @@
     "posted": "",
     "description": "З метою підготовки до складання літньої заліково - екзаменаційної сесії 2019-2020 н.р., заздалегідь повідомляємо Вам форми підсумкового контролю та переліки питань до заліку, екзамену, підсумкового контролю з дисциплін."
   }, {
-    "href": "https://mon.gov.ua/ua/news/karantin-prodovzheno-do-11-travnya/",
+    "href": "https://www.kmu.gov.ua/news/karantin-prodovzheno-do-22-travnya-ale-z-11-travnya-bude-skasovano-chastinu-obmezhen/",
     "link": "",
     "target": "_blank",
     "img": "content-image/posts-mini/quarantin.jpg",
-    "title": "Карантин продовжено до 11 травня",
+    "title": "Карантин продовжено до 22 травня",
     "posted": "",
-    "description": "Загальнонаціональний карантин продовжено до 11 травня 2020 року – відповідне рішення Уряд ухвалив сьогодні, 22 квітня 2020 року. Всі заклади освіти продовжують працювати з використанням технологій дистанційного навчання."
+    "description": "Кабінет Міністрів України продовжив карантин в Україні до 22 травня, але вже 11 травня буде скасована частина обмежувальних заходів. У кожному регіоні відбудуться різні послаблення, в залежності від епідеміологічної ситуації. Відповідне рішення було прийняте на позачерговому засіданні Уряду 4 травня."
   }, {
     "href": "javascript:;",
     "link": "loadContent('news-content/2020/28-04/content.html');",
