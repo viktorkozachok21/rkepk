@@ -34,12 +34,12 @@
   }],
   "posts": [{
     "href": "javascript:;",
-    "link": "loadContent('menu-content/session.html');",
+    "link": "loadContent('menu-content/session-schedule/content.html');",
     "target": "",
     "img": "content-image/posts-mini/session.jpg",
     "title": "Шановні студенти!",
     "posted": "",
-    "description": "З метою підготовки до складання літньої заліково - екзаменаційної сесії 2019-2020 н.р., заздалегідь повідомляємо Вам форми підсумкового контролю та переліки питань до заліку, екзамену, підсумкового контролю з дисциплін."
+    "description": "З метою складання літньої заліково-екзаменаційної сесії 2019-2020 н.р., повідомляємо Вам розклад екзаменів для підсумкового контролю з дисциплін."
   }, {
     "href": "https://www.kmu.gov.ua/news/karantin-prodovzheno-do-22-travnya-ale-z-11-travnya-bude-skasovano-chastinu-obmezhen/",
     "link": "",
