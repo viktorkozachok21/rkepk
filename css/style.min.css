@@ -164,6 +164,7 @@ a {
 }
 
 .post-description {
+  min-height: 3.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

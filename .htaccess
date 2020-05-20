@@ -22,7 +22,7 @@ DirectoryIndex index.html
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ http://rkepk.edu.ua/ [L]
+RewriteRule ^ https://rkepk.edu.ua/ [L]
 RewriteBase /
 RewriteCond %{QUERY_STRING} !^$
 RewriteRule ^$ /? [L,R=301]
@@ -34,5 +34,5 @@ ErrorDocument 404 /siteerror404.html
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 RewriteEngine On
-RewriteCond %{HTTP_HOST} www.rkepk.edu.ua
-RewriteRule (.*) http://rkepk.edu.ua/$1 [R=301,L]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://rkepk.edu.ua/$1 [R,L]
